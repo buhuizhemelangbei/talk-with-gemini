@@ -1,5 +1,5 @@
 {
-  "title": "与 Gemini 交谈",
+  "title": "怎会这么狼狈",
   "status": {
     "thinking": "正在思考"
   },
@@ -10,11 +10,11 @@
   "stopTalking": "停止说话",
   "startRecording": "开始录音",
   "setting": "设置",
-  "settingDescription": "请输入访问密码或者使用自己的 Gemini 密钥，密钥通过浏览器发送请求，不会转发到后端服务器。",
-  "accessPassword": "访问密码",
+  "settingDescription": "默认使用站点api，也可使用自备api，无论如何都不会以任何形式记录，保存用户对话信息",
+  "accessPassword": "访问密码【2024】",
   "accessPasswordPlaceholder": "请输入访问密码",
   "geminiKey": "Gemini 密钥",
-  "geminiKeyPlaceholder": "请输入 Gemini 密钥",
+  "geminiKeyPlaceholder": "请输入 Gemini 密钥【没有也没关系】",
   "apiProxyUrl": "API 代理链接",
   "apiProxyUrlPlaceholder": "请输入 API 代理链接（可选）",
   "uploadProxyUrl": "文件上传代理链接",
