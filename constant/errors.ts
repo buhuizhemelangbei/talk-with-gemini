@@ -1,7 +1,7 @@
 export enum ErrorType {
-  InValidToken = 'Token is invalid',
-  NoGeminiKey = 'The server Gemini key is missing',
-  ServerError = 'Server Error',
-  MissingParam = 'Missing required parameters',
-  NoUploadURL = 'Unable to get upload URL',
+  InValidToken = 'key错误，调用失败',
+  NoGeminiKey = 'Gemini key丢失，不是你的问题',
+  ServerError = '出了点问题，等等吧',
+  MissingParam = '没填参数，不准使用',
+  NoUploadURL = 'URL上传失败，自己找找原因 ',
 }
