@@ -19,16 +19,23 @@ const APP_TITLE_TEMPLATE = '%s - PWA App'
 const APP_DESCRIPTION =
   'Deploy your private Gemini application for free with one click, supporting Gemini 1.5 Pro, Gemini 1.5 Flash, Gemini Pro and Gemini Pro Vision models. 支持 Gemini 1.5 Pro、Gemini 1.5 Flash、Gemini Pro 和 Gemini Pro Vision 模型。'
 
-export const metadata: Metadata = {
-  applicationName: APP_NAME,
-  title: {
-    default: APP_DEFAULT_TITLE,
-    template: APP_TITLE_TEMPLATE,
-  },
-  description: APP_DESCRIPTION,
-  keywords: ['Gemini', 'Gemini Pro', 'Gemini 1.5', 'Gemini Chat', 'AI', 'voice', 'Free Chatgpt', 'Chatgpt'],
-  icons: {
-    icon: {
+
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>{HEAD_SCRIPTS ? <Script id="headscript">{HEAD_SCRIPTS}</Script> : null}</head>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <StoreProvider isProtected={ENABLE_PROTECT}>
+            <I18Provider>{children}</I18Provider>
+          </StoreProvider>
+        </ThemeProvider>
+        <Toaster />
+      </body>
+    </html>
+  )
+}
       type: 'image/svg+xml',
       url: './logo.svg',
     },
