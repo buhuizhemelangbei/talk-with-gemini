@@ -18,6 +18,7 @@ import { Model } from '@/constant/model'
 import { useSettingStore } from '@/store/setting'
 import { toPairs, values } from 'lodash-es'
 
+
 type SettingProps = {
   open: boolean
   hiddenTalkPanel?: boolean
